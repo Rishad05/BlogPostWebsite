@@ -5,7 +5,7 @@ import './BlogDetails.css';
 const BlogDetails = ({blog}) => {
     const history = useHistory();
     const handleBuy =(_id)=>{
-        history.push(`/enrollClass/${_id}`)
+        history.push(`/seeBlogs/${_id}`)
     }
     return (
         <div className="container mt-2 mb-5 col-md-4">

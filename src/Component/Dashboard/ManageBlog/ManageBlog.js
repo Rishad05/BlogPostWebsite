@@ -39,7 +39,7 @@ const ManageBlog = () => {
                 <div className="col-md-10 p-4 mx-auto bg-warning">
                     <h2 className="border-bottom mb-2 fw-bolder text-light text-center">Blog MANAGE</h2>
                         <div className="col-md-12">
-                            <h3 className="mb-3 text-primary">Total Product: {blogs.length}</h3>
+                            <h3 className="mb-3 text-primary">Total Blog: {blogs.length}</h3>
 
                             <table className="table table-sm table-info text-center table-bordered " >
                                 <thead>

@@ -12,6 +12,7 @@ import Login from './Component/Login/Login/Login';
 import PrivateRoute from './Component/Login/PrivateRoute/privateRoute';
 import Dashboard from './Component/Dashboard/Dashboard/Dashboard';
 import AddBlog from './Component/Dashboard/AddBlog/AddBlog';
+import CompleteBlog from './Component/Dashboard/CompleteBlog/CompleteBlog';
 import ManageBlog from './Component/Dashboard/ManageBlog/ManageBlog';
 
 export const userContext = createContext()
@@ -32,6 +33,9 @@ function App() {
           <PrivateRoute path="/blogManage">
            <ManageBlog></ManageBlog>
           </PrivateRoute>
+          <Route path="/seeBlogs/:id">
+          <CompleteBlog></CompleteBlog>
+          </Route>
           <Route path="/login">
            <Login></Login>
           </Route>

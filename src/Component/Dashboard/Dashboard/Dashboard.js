@@ -12,7 +12,7 @@ const Dashboard = () => {
         <section>
             <div style={containerStyle}>
           {/* <Header></Header> */}
-                <div className="col-md-8">
+                <div className="col-md-10">
                    
                     <Sidebar></Sidebar>
                 </div>

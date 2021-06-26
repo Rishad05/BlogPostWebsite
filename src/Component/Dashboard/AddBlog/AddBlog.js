@@ -61,7 +61,7 @@ const AddBlog = () => {
                         
                         <div className="col-md-6">
                             <label class="form-label fw-bolder">Blog Content</label>
-                            <input type="text" onBlur={handleBlur} name="blogContent" class="form-control" placeholder="Blog Content" />
+                            <textarea type="text" onBlur={handleBlur} name="blogContent" class="form-control" placeholder="Blog Content" />
                         </div>
 
                         <div className="col-md-12 d-flex align-items-center">
