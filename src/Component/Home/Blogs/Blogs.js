@@ -10,9 +10,9 @@ const Blogs = () => {
         .then(data => setBlogs(data))
     }, [])
     return (
-        <section className="class-container mt-5 background-service">
+        <section className="class-container mt-5 background-blogs">
         <div className="text-center">
-            <h2 style={{color: 'orange'}} className="border-bottom container fw-bolder ">CHOOSE CLASSES FOR YOUR CHILD</h2>
+            {/* <h2 style={{color: 'orange'}} className="border-bottom container fw-bolder "></h2> */}
         </div>
             <div className="d-flex justify-content-center">
             <div className="w-75 row mt-2 pt-5 ">

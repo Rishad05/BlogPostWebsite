@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react';
 import './App.css';
 import Header from './Component/Shared/Header/Header';
+import Home from './Component/Home/Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,6 +34,9 @@ function App() {
           </PrivateRoute>
           <Route path="/login">
            <Login></Login>
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
         </Switch>
       </Router>

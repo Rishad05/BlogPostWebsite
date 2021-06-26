@@ -14,18 +14,18 @@ const BlogDetails = ({blog}) => {
             {
                 blog.image ? <img style={{height: '200px', width: '200px'}} className="img-animation" src={`data:image/jpeg;base64,${blog.image.img}`}alt=""/>
                 :
-                <img style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`http://localhost:5000//${blog.img}`} alt=""/>
+                <img onClick={() => handleBuy (blog._id)} style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`http://localhost:5000//${blog.img}`} alt=""/>
             }
             </div>
             <div style= {{backgroundColor:'#ffb380', color:'white'}} class="card-body fw-bolder">
-                <h3 class="card-title ">{blog.blogTitle}</h3>
+                <h3 onClick={() => handleBuy (blog._id)} class="card-title ">{blog.blogTitle}</h3>
                 <small>blogContent: {blog.blogContent}</small>
                 <br />
                
 
             </div>
             <div className="card-footer d-flex justify-content-between">
-                <button onClick={() => handleBuy (blog._id)} style={{backgroundColor:'#ff6600', color:'white'}} className="btn">See More</button>
+               
             </div>
         </div>
         </div>
